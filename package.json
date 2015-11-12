@@ -1,10 +1,8 @@
 {
   "name": "@anonymous-paris/compare-module",
-  "version": "1",
-  "engines": {
-    "node": ">= 0.8.0"
-  },
-  "scripts": {},
+  "version": "1.0.0",
+  "description": "A compare module for images or videos",
+  "main": "index.js",
   "devDependencies": {
     "@anonymous-paris/core-js": "0.0.2",
     "autoprefixer": "^6.0.3",
@@ -26,5 +24,19 @@
     "watchify": "^3.4.0",
     "webpack": "^1.12.2",
     "yargs": "^3.29.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anonymous-paris/compare-module.git"
+  },
+  "author": "Anonymous Paris <contact+npm@anonymous.paris> (http://anonymous.paris)",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/anonymous-paris/compare-module/issues"
+  },
+  "homepage": "https://github.com/anonymous-paris/compare-module"
 }
