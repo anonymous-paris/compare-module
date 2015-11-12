@@ -1,0 +1,22 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Anonymous - Compare Module</title>
+
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<div class="container">
+	
+		{% set imgs = ['images/module-3.jpg', 'images/module-2.jpg', 'images/module-1.jpg'] %}
+		{% include 'partials/compare-module.twig' with {images: imgs} %}
+	
+	</div>
+
+	<script src="./js/scripts.js"></script>
+
+</body>
+
+</html>
