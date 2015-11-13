@@ -54,7 +54,13 @@ gulp.task('createIndex', function()
 		file.on('error', function(err) { throw err; });
 		results.forEach(function(_line)
 		{
-			var line = 'exports.' + path.basename(_line, path.extname(_line)) + ' = ' + "require('./"+path.relative(process.cwd(), _line)+"');";
+			var line;
+
+			if (results.length > 1 )
+				line = 'exports.' + path.basename(_line, path.extname(_line)) + ' = ' + "require('./"+path.relative(process.cwd(), _line)+"');";
+			else
+				line = 'export default ' + "require('./"+path.relative(process.cwd(), _line)+"');";
+			
 			file.write(line + '\n'); });
 		file.end();
 	});
